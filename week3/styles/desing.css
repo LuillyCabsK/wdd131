@@ -1,0 +1,162 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML Element Selectors */
+body {
+    font-family: Roboto, helvetica, sans-serif;
+    margin: 1rem;
+    box-sizing: ;
+    color: rgb(3, 3, 3);
+    background-color: rgb(187, 151, 107);
+}
+
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+}
+
+h1 {
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+    margin: 1rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 1rem;
+    align-items: center;
+    
+}
+
+h2 {
+    color: navy;
+    grid-column: 1/3;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgb(0 0 0 / 0.1);
+    padding: 0.5rem 0;
+    font-size: smaller;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Class Selectors */
+.banner {
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: rgb(230 243 254 / 1);
+    font-weight: 700;
+    word-break: break-word;
+    text-align: center;
+}
+
+.callout {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    color: #000;
+    background-color: #eee;
+    grid-column: 1/3;
+    padding: 1rem;
+}
+
+
+.image-weather {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.responsive-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px solid #af1212;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-map {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Para dispositivos móviles pequeños (pantallas de hasta 480px) */
+@media (max-width: 480px) {
+    body {
+        margin: 0.5rem;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Colombia_Cauca_location_map_%28%2Blocator_map%29.svg/250px-Colombia_Cauca_location_map_%28%2Blocator_map%29.svg.pnghttps://www.popayan.gov.co/SecretariasyEntidades/Turismo/PublishingImages/Paginas/popayan/Ciudad%20de%20Popay%C3%A1n_%20(13).jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    header,
+    main,
+    footer {
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+    
+    .banner {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    .image-map {
+        max-width: 200px;
+    }
+    
+    .image-weather {
+        width: 60px;
+        height: 60px;
+    }
+}
